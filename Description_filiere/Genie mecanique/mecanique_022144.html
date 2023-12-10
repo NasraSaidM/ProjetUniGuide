@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../UniGuide/css/footer.css">
+  <link rel="stylesheet" href="../../UniGuide/css/header.css">
+  <script src="https://kit.fontawesome.com/7396c9fb7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="nav_header">
+    <header class="header">
+      <div class="logo">
+        <img src="/image/logo.jpeg" class="img">
+      </div>
+
+      <div class="nav_bar">
+        <ul>
+          <li>
+            <a href="/UniGuide/index.html">
+              <div class="icon"><i class="fa-solid fa-house"></i></div>
+              <div class="name">Home</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/propos.html">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="name"> A propos</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/contact.html">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="name">Contact</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+              <div class="name">Deconnection</div>
+            </a>
+          </li>
+          <div class="bar"><i class="fa-solid fa-bars"></i></div>
+
+        </ul>
+
+
+
+      </div>
+
+    </header>
+    <div class="responsive_menu ">
+      <ul>
+        <li>
+          <a href="/UniGuide/index.html">
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="name">Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/propos.html">
+            <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="name"> A propos</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/contact.html">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="name">Contact</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+            <div class="name">Deconnection</div>
+          </a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+  <script>
+    const bar = document.querySelector('.bar')
+    const baricon = document.querySelector('.bar i ')
+    const responsive_menu = document.querySelector('.responsive_menu')
+    bar.onclick = function () {
+      responsive_menu.classList.toggle('open')
+    }
+  </script>
+  <div class="retour_arriere">
+    <div class="retour_btn"><i class="fa-solid fa-arrow-left"></i></div>
+  </div>
+  
+  <script>
+    let btnBack = document.querySelector('.retour_btn');
+    btnBack.addEventListener('click',()=> {
+      window.history.back()
+    } );
+  </script>
+
+  <div class="main">
+    <h1 class="title">Génie mécanique</h1>
+    <div class="description">
+      <div class="des">Description</div>
+      <p>La filière du génie mécanique est une branche de l'ingénierie qui se concentre sur la conception, l'analyse,
+        la fabrication et la maintenance de systèmes mécaniques. Les ingénieurs mécaniques travaillent sur une
+        variété de projets, allant des machines simples aux systèmes complexes.
+        Cette filiere propose des opportunités diverses. Les ingénieurs mécaniques conçoivent des produits et
+        effectuent des analyses structurelles et thermiques. Ils supervisent la fabrication, sélectionnent des
+        matériaux et travaillent sur la dynamique des fluides et la thermodynamique. L'automatisation, la robotique,
+        l'énergie,
+        les systèmes mécatroniques, l'aérospatiale et la biomécanique sont autant de domaines d'expertise. Certains
+        optent pour la consultance et la gestion de projet, tandis que d'autres se dirigent vers la recherche et le
+        développement.
+      </p>
+    </div>
+    <div class="des description">Carriere</div>
+    <p class="description ">Les diplômés en génie mécanique ont un large éventail de carrières, avec des salaires
+      variables. Les
+      ingénieurs en conception mécanique peuvent gagner entre 60 000€ et 100 000€, tandis que les ingénieurs en
+      automatisation ont des marges salariales de 70 000€ à 120 000€. Les spécialistes en énergie et
+      thermodynamique peuvent percevoir entre 65 000€ et 110 000€, et les ingénieurs de production ont des
+      salaires de 55 000€ à 95 000€. Les experts en ingénierie des matériaux peuvent également bénéficier de
+      marges salariales compétitives, en fonction de leur expérience et de la complexité des projets.
+    </p>
+  </div>
+  <div class="maquette">Maquette </div>
+  <div class="maq">
+    <a href="GM DUT.pdf" target="_blank">Cliquez ici pour visualiser la maquette DUT de la filière génie
+      mécanique</a>
+  </div>
+  <div class="maq">
+    <a href="GM Licence.pdf" target="_blank">Cliquez ici pour visualiser la maquette Licence de la filière
+      génie mécanique</a>
+  </div>
+  </div>
+
+
+  <div class="temoignage">
+    <div class="temo"></div>
+    <div class="temo_flex">
+      <div class="temognage_img"><img src="/image/unnamed.jpg" class="temo_img"></div>
+
+      <h2 class="nom">UNKNOWN</h2>
+
+    </div>
+    <p class="temo_txt">Je m'appelle Fatouma et je viens de Djibouti. Dès mon plus jeune âge, j'ai toujours été fascinée
+      par la manière dont les machines fonctionnent.
+
+      Mon parcours académique a commencé à l'université de Djibouti, où j'ai suivi un cursus en génie mécanique.
+
+      Après l'obtention de mon diplôme en génie mécanique, j'ai eu l'opportunité de travailler dans une entreprise
+      locale spécialisée dans la maintenance des équipements industriels.
+
+
+
+      Ce chemin dans le génie mécanique m'a ouvert des portes vers un monde de possibilités où je peux continuer à
+      innover et à contribuer à l'avancement technologique de ma communauté et de mon pays.</p>
+
+  </div>
+
+  <footer class="footer">
+    <div class="part1">
+      <h3 class="mot">Le mot de la team</h3>
+      <p class="text">Coucou et bienvenue sur UniGuide conçu par les etudiants pour les futures etudiants, qui
+        révolutionne l'orientation post-bac pour tous.</p>
+    </div>
+    <div class="part1">
+      <h3 class="mot">Besoin d'aide ?</h3>
+      <div class="icon_mail">
+        <div class="icon"><i class="fa-regular fa-envelope fa-2xl"></i></div>
+        <div class="mail">UniGuide37@gmail.com</div>
+      </div>
+      <div class="social_icons">
+        <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icons"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+
+    </div>
+    <div class="part1 ">
+      <div class="part3">
+        <h3 class="mot1">&copy 2023 copyright.</h3>
+        <p class="text1">ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

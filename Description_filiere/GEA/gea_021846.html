@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../UniGuide/css/footer.css">
+  <link rel="stylesheet" href="../../UniGuide/css/header.css">
+  <script src="https://kit.fontawesome.com/7396c9fb7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="nav_header">
+    <header class="header">
+      <div class="logo">
+        <img src="/image/logo.jpeg" class="img">
+      </div>
+
+      <div class="nav_bar">
+        <ul>
+          <li>
+            <a href="/UniGuide/index.html">
+              <div class="icon"><i class="fa-solid fa-house"></i></div>
+              <div class="name">Home</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/propos.html">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="name"> A propos</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/contact.html">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="name">Contact</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+              <div class="name">Deconnection</div>
+            </a>
+          </li>
+          <div class="bar"><i class="fa-solid fa-bars"></i></div>
+
+        </ul>
+
+
+
+      </div>
+
+    </header>
+    <div class="responsive_menu ">
+      <ul>
+        <li>
+          <a href="/UniGuide/index.html">
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="name">Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/propos.html">
+            <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="name"> A propos</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/contact.html">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="name">Contact</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+            <div class="name">Deconnection</div>
+          </a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+  <script>
+    const bar = document.querySelector('.bar')
+    const baricon = document.querySelector('.bar i ')
+    const responsive_menu = document.querySelector('.responsive_menu')
+    bar.onclick = function () {
+      responsive_menu.classList.toggle('open')
+    }
+  </script>
+  <div class="retour_arriere">
+    <div class="retour_btn"><i class="fa-solid fa-arrow-left"></i></div>
+  </div>
+  
+  <script>
+    let btnBack = document.querySelector('.retour_btn');
+    btnBack.addEventListener('click',()=> {
+      window.history.back()
+    } );
+  </script>
+  <div class="main">
+    <h1 class="title">Gestion des entreprises et des administrations</h1>
+    <div class="description">
+      <div class="des">Description</div>
+      <p>La filière Gestion des entreprises et des administrations (GEA) offre une formation polyvalente axée sur les
+        principes fondamentaux de la gestion. Les étudiants y acquièrent des connaissances variées en comptabilité,
+        finance, marketing, et ressources humaines. Le programme met l'accent sur le développement des compétences
+        nécessaires à la prise de décisions stratégiques au sein d'une organisation. Les cours couvrent également la
+        compréhension des enjeux économiques et juridiques qui impactent le monde des affaires. La filière GEA
+        prépare ainsi les étudiants à évoluer efficacement dans le milieu professionnel de la gestion.
+      </p>
+    </div>
+    <div class="des description">Carriere</div>
+    <p class="description carriere">Les diplômés de la filière Gestion des entreprises et des administrations peuvent accéder à diverses
+      carrières dans les domaines de la comptabilité, des ressources humaines, du marketing, de la finance, et de
+      la gestion. Les opportunités professionnelles incluent des postes tels que comptable, gestionnaire des
+      ressources humaines, analyste financier, ou chef de projet marketing. Les salaires varient en fonction du
+      secteur et de l'expérience, avec des gestionnaires expérimentés pouvant atteindre des revenus supérieurs.
+      Les opportunités d'avancement professionnel et de spécialisation peuvent également influencer les
+      perspectives salariales.
+    </p>
+  </div>
+
+
+
+
+  <div class="temoignage">
+    <div class="temo"></div>
+    <div class="temo_flex">
+      <div class="temognage_img"><img src="/image/unnamed.jpg" class="temo_img"></div>
+      
+        <h2 class="nom">UNKNOWN</h2>
+      
+    </div>
+    <p class="temo_txt"> Je me nomme Ahmed. Mon voyage dans l'informatique a débuté après le lycée À l'université, attiré par l'innovation, j'ai plongé dans ce monde inconnu, surmontant les défis grâce au soutien de mes pairs et professeurs.
+
+      J'ai consacré temps et énergie à assimiler les concepts fondamentaux, trouvant une passion pour le développement web au fil des années. Aujourd'hui, travaillant dans une entreprise de développement de logiciels à Djibouti, je contribue au progrès technologique local. Fier de mes compétences acquises, je réalise comment l'informatique ouvre des portes dans notre monde en perpétuelle évolution.</p>
+
+  </div>
+
+
+
+
+  <footer class="footer">
+    <div class="part1">
+      <h3 class="mot">Le mot de la team</h3>
+      <p class="text">Coucou et bienvenue sur UniGuide conçu par les etudiants pour les futures etudiants, qui
+        révolutionne l'orientation post-bac pour tous.</p>
+    </div>
+    <div class="part1">
+      <h3 class="mot">Besoin d'aide ?</h3>
+      <div class="icon_mail">
+        <div class="icon"><i class="fa-regular fa-envelope fa-2xl"></i></div>
+        <div class="mail">UniGuide37@gmail.com</div>
+      </div>
+      <div class="social_icons">
+        <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icons"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+
+    </div>
+    <div class="part1 ">
+      <div class="part3">
+        <h3 class="mot1">&copy 2023 copyright.</h3>
+        <p class="text1">ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

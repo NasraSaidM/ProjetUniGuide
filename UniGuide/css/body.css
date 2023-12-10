@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: Manrope,sans-serif;
+  
+ }
+
+ body{
+  background-color: #E4F3EC;
+ }
+ .slogan{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding-top: 80px;
+  height: 490px;
+  margin-top: 80px;
+  background-color: white;
+  
+ }
+ a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+ }
+ .title{
+  color: rgb(177, 29, 29);
+  font-weight: 500;
+  font-size: 24px;
+  display: block;
+ }
+ 
+ .slogan h1,.slogan p{
+  display: block;
+  margin-left: 40px;
+ }
+ 
+ .carriere-img{
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 50px;
+  
+  margin-right: 50px;
+ }
+.info{
+  margin-left: 50px;
+}
+  
+ 
+.section{
+display: flex;
+justify-content: space-between; 
+background-color: white;
+height: 520px;
+padding-top: 40px;
+
+}
+
+
+.one{
+  width: 500px;
+  margin-left: 50px;
+}
+
+.grad{
+  width:400px;
+  height: 300px;
+  border-radius: 6px;
+  margin-top: 40px;
+  box-shadow: 2px 2px 2px gray;
+  margin-right: 100px;
+
+}
+.txt {
+  letter-spacing: 1px;
+  margin-top: 40px;
+  line-height: 2.6;
+  width: 500px;
+  font-weight: 600;
+  color: rgb(37, 36, 36);
+}
+.title{
+  font-size: 32px;
+  color:rgb(177, 29, 29);
+  line-height: 1.4;
+  font-weight: 700;
+}
+span{
+  margin-top: 10px;
+  margin-right:20px 
+}
+ .uni_logo{
+  height: 70px;
+  
+}
+
+.btnn,.connexion{
+  padding: 14px 30px;
+  background-color:  #3DB166;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-weight: 600;
+ }
+.btnn:hover,.connexion:hover{
+  color: #3DB166;
+  background-color:white ;
+  font-weight: 600;
+  transition: color 0.15s;
+  transition: background-color 0.15s;
+ 
+}
+section button{
+  margin-top: 40px;
+  margin-left: 35px;
+}
+.ori{
+  display: grid;
+  grid-template-columns: 620px 1fr;
+  height: 340px;
+  margin-top: 40px;
+  
+}
+
+
+.orientation_text{
+  margin-top: 16px;
+}
+
+.img{
+  margin-left: 150px;
+}
+.image{
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+  margin-top: 15px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px gray;
+ 
+}
+
+@media(max-width:550px){
+ 
+  .section,.slogan{
+    margin-top: 40px;
+    display: inline-block;
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+  }
+  .grad,.image,.carriere-img{
+    margin-left: 85px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+  }
+  .txt{
+    width: 400px;
+  }
+  .info,.img{
+    margin: 0;
+  }
+ 
+  .ori{
+    grid-template-columns: 1fr;
+    height: 700px;
+    margin: 0;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 500px;
+  }
+  .orientation_text{
+   margin-left:50px ;
+  }
+  p{
+    width: 400px;
+  }
+  .slogan{
+    margin-bottom:40px ;
+  }
+ 
+  
+}

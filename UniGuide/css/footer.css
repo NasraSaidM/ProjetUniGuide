@@ -1,0 +1,76 @@
+.footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  color: #fff;
+  display: flex;
+  background-color:#213b6d;
+  margin-top: 40px;
+  height: 300px;
+}
+  
+
+.part1{
+  margin-left: 100px;
+  border-right: 1px solid white;
+  width: 400px;
+  height: 100%;
+  padding-top: 40px;
+ 
+}
+.mot{
+  font-size:24px;
+  font-weight: 500;
+  letter-spacing: 2;
+  margin-bottom: 20px;
+}
+.footer .text{
+  width: 300px;
+}
+.icon_mail{
+  display: flex;
+}
+.icon{
+  margin-right: 14px;
+  font-size: 20px;
+}
+.icons{
+  margin-top: 20px;
+  font-size: 32px;
+}
+.icon,.icons{
+  cursor: pointer;
+}
+.icons i{
+  margin-left: 20px;
+}
+.social_icons{
+  display: flex;
+  align-items: center;
+}
+.mot1,.text1{
+  margin-left: 20px;
+}
+.mot1{
+  margin-bottom: 20px;
+}
+.text1{
+  font-size: 22px;
+  font-weight: 700;
+}
+.part3{
+  margin-top: 50px;
+}
+
+@media(max-width:550px){
+  
+  .footer{
+    display: inline-block;
+    margin-top: 0;
+   
+  }
+  .part3{
+    padding-bottom: 40px;
+  }
+}

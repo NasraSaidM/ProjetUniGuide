@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Manrope,sans-serif;
+  
+ }
+body{
+  background-color: rgb(231, 227, 221);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.border{
+  border-radius:6px ;
+  box-shadow: 2px 2px 2px gray;
+  margin-top: 60px;
+  width: 400px;
+  margin-left: 40px ;
+  padding: 14px 20px ;
+  height: 250px;
+
+}
+video{
+  margin-left: 70px;
+  margin-top: -50px;
+}
+.break{
+   
+    width:400px;
+    margin: 5px;
+   
+   
+  }
+  .milieu{
+    
+    width: 400px;
+    margin: 5px;
+   
+  }
+  .Stuff{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+  }
+  .fin{
+   
+    width: 400px;
+    margin: 10px;
+    
+  }

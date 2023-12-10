@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../UniGuide/css/footer.css">
+  <link rel="stylesheet" href="../../UniGuide/css/header.css">
+  <script src="https://kit.fontawesome.com/7396c9fb7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="nav_header">
+    <header class="header">
+      <div class="logo">
+        <img src="/image/logo.jpeg" class="img">
+      </div>
+
+      <div class="nav_bar">
+        <ul>
+          <li>
+            <a href="/UniGuide/index.html">
+              <div class="icon"><i class="fa-solid fa-house"></i></div>
+              <div class="name">Home</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/propos.html">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="name"> A propos</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/contact.html">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="name">Contact</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+              <div class="name">Deconnection</div>
+            </a>
+          </li>
+          <div class="bar"><i class="fa-solid fa-bars"></i></div>
+
+        </ul>
+
+
+
+      </div>
+
+    </header>
+    <div class="responsive_menu ">
+      <ul>
+        <li>
+          <a href="/UniGuide/index.html">
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="name">Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/propos.html">
+            <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="name"> A propos</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/contact.html">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="name">Contact</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+            <div class="name">Deconnection</div>
+          </a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+  <script>
+    const bar = document.querySelector('.bar')
+    const baricon = document.querySelector('.bar i ')
+    const responsive_menu = document.querySelector('.responsive_menu')
+    bar.onclick = function () {
+      responsive_menu.classList.toggle('open')
+    }
+  </script>
+  <div class="retour_arriere">
+    <div class="retour_btn"><i class="fa-solid fa-arrow-left"></i></div>
+  </div>
+  
+  <script>
+    let btnBack = document.querySelector('.retour_btn');
+    btnBack.addEventListener('click',()=> {
+      window.history.back()
+    } );
+  </script>
+
+  <div class="main">
+    <h1 class="title">Mathématique (Math)</h1>
+    <div class="description">
+      <div class="des">Description</div>
+      <p>Une filière mathématique à l'université se concentre sur l'étude approfondie des concepts mathématiques, englobant des domaines tels que l'analyse, l'algèbre, la géométrie, les statistiques, la probabilité, l'informatique mathématique, la topologie, les équations différentielles, et les applications pratiques des mathématiques dans divers secteurs. Elle vise à développer une compréhension avancée des principes mathématiques, encourageant la résolution de problèmes complexes et la pensée abstraite. Cette filière offre une base pour des carrières en recherche, enseignement, informatique, finance, et bien d'autres domaines.
+      </p>
+    </div>
+    <div class="des description">Carriere</div>
+    <p class="description">Les mathématiques appliquées trouvent des applications dans divers domaines, tels que l'économie, la physique, la biologie, et l'informatique. Les carrières en mathématiques incluent des rôles de chercheurs, d'analystes de données, d'actuaires, et d'enseignants.
+
+      En prenant en compte différentes professions telles que chercheur en mathématiques, analyste de données, actuaire, enseignant, ingénieur en optimisation, développeur de logiciels en simulation, consultant en analyse de données, cryptanalyste, ingénieur en intelligence artificielle, et expert en modélisation financière, l'intervalle global de salaire peut se situer entre environ 40 000€ et 120 000€ par an. Cependant, il est important de noter que ces chiffres sont des estimations générales, et les salaires réels peuvent varier en fonction de divers facteurs tels que l'expérience, la localisation géographique, le secteur d'emploi et le niveau d'éducation.
+  </div>
+  <div class="maquette">Maquette  </div>
+  <div class="maq" >
+    <a href="Mathématique.pdf" target="_blank">Cliquez ici pour visualiser la maquette de la filière mathématique</a>
+    </div>
+
+    <div class="temoignage">
+      <div class="temo"></div>
+      <div class="temo_flex">
+        <div class="temognage_img"><img src="/image/unnamed.jpg" class="temo_img"></div>
+        
+          <h2 class="nom">Mohamed Ali </h2>
+        
+      </div>
+      <p class="temo_txt"> "Je m'appelle et je viens de Djibouti. Depuis mon enfance, j'ai toujours été fascinée par les mathématiques. Le défi de résoudre des problèmes logiques et complexes m'a toujours stimulée. J'ai donc décidé de poursuivre mes études dans cette voie.
+        
+        Au fil du temps, j'ai réalisé que les mathématiques ne se limitaient pas à des équations et des nombres. Elles étaient la clé pour résoudre des problèmes dans divers domaines, de la science à la finance en passant par la technologie. 
+        Après avoir obtenu mon diplôme universitaire, j'ai eu l'opportunité de travailler comme analyste de données pour une entreprise technologique de Djibouti."
+        
+        </p>
+  
+    </div>
+  <footer class="footer">
+    <div class="part1">
+      <h3 class="mot">Le mot de la team</h3>
+      <p class="text">Coucou et bienvenue sur UniGuide conçu par les etudiants pour les futures etudiants, qui
+        révolutionne l'orientation post-bac pour tous.</p>
+    </div>
+    <div class="part1">
+      <h3 class="mot">Besoin d'aide ?</h3>
+      <div class="icon_mail">
+        <div class="icon"><i class="fa-regular fa-envelope fa-2xl"></i></div>
+        <div class="mail">UniGuide37@gmail.com</div>
+      </div>
+      <div class="social_icons">
+        <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icons"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+
+    </div>
+    <div class="part1 ">
+      <div class="part3">
+        <h3 class="mot1">&copy 2023 copyright.</h3>
+        <p class="text1">ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

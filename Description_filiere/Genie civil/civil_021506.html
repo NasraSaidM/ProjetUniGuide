@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../UniGuide/css/footer.css">
+  <link rel="stylesheet" href="../../UniGuide/css/header.css">
+  <script src="https://kit.fontawesome.com/7396c9fb7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="nav_header">
+    <header class="header">
+      <div class="logo">
+        <img src="/image/logo.jpeg" class="img">
+      </div>
+
+      <div class="nav_bar">
+        <ul>
+          <li>
+            <a href="/UniGuide/index.html">
+              <div class="icon"><i class="fa-solid fa-house"></i></div>
+              <div class="name">Home</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/propos.html">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="name"> A propos</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/contact.html">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="name">Contact</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+              <div class="name">Deconnection</div>
+            </a>
+          </li>
+          <div class="bar"><i class="fa-solid fa-bars"></i></div>
+
+        </ul>
+
+
+
+      </div>
+
+    </header>
+    <div class="responsive_menu ">
+      <ul>
+        <li>
+          <a href="/UniGuide/index.html">
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="name">Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/propos.html">
+            <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="name"> A propos</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/contact.html">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="name">Contact</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+            <div class="name">Deconnection</div>
+          </a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+  <script>
+    const bar = document.querySelector('.bar')
+    const baricon = document.querySelector('.bar i ')
+    const responsive_menu = document.querySelector('.responsive_menu')
+    bar.onclick = function () {
+      responsive_menu.classList.toggle('open')
+    }
+  </script>
+  <div class="retour_arriere">
+    <div class="retour_btn"><i class="fa-solid fa-arrow-left"></i></div>
+  </div>
+  
+  <script>
+    let btnBack = document.querySelector('.retour_btn');
+    btnBack.addEventListener('click',()=> {
+      window.history.back()
+    } );
+  </script>
+  <div class="main">
+    <h1 class="title">Genie Civil(GC)</h1>
+    <div class="description">
+      <div class="des">Description</div>
+      <p> La filière de génie civil forme des ingénieurs spécialisés dans la conception, la construction et la
+        maintenance d'infrastructures cruciales. Les étudiants acquièrent des compétences allant de la conception
+        architecturale à la gestion de projets, incluant l'étude des matériaux, des méthodes de construction et de
+        la mécanique des structures. Les diplômés jouent un rôle clé dans le développement urbain et rural en
+        concevant des ouvrages tels que des ponts, des barrages et des routes. La gestion de projets, couvrant la
+        planification et la conformité aux normes de sécurité, est une composante essentielle. Globalement, la
+        filière contribue de manière cruciale à l'édification d'infrastructures durables et au développement
+        sociétal.
+      </p>
+    </div>
+    <div class="des description">Carriere</div>
+    <p class="description"> Les diplômés en génie civil peuvent choisir parmi diverses carrières avec des marges salariales variables.
+      Les ingénieurs en conception peuvent gagner entre 50 000€ et 90 000€, tandis que les ingénieurs de projet
+      ont des salaires de 55 000€ à 100 000€. Les ingénieurs spécialisés en structures peuvent percevoir entre 60
+      000€ et 110 000€, et ceux en gestion de la construction ont des revenus de 60 000€ à 100 000€. Les
+      inspecteurs en bâtiment peuvent gagner de 45 000€ à 80 000€, et les directeurs de projet peuvent atteindre
+      entre 70 000€ et 120 000€, selon la taille et la complexité des projets, ainsi que l'expérience.
+    </p>
+  </div>
+  <div class="maquette">Maquette</div>
+  <div class="maq" >
+    <a href="Gc dut.pdf" target="_blank">Cliquez ici pour visualiser la maquette DUT de la filière génie
+      civil</a>
+    </div>
+  <div class="maq" > 
+    <a href="Gc Licence.pdf" target="_blank">Cliquez ici pour visualiser la maquette Licence de la filière
+      génie civil</a>
+  </div>
+</div>
+
+
+<div class="temoignage">
+  <div class="temo"></div>
+  <div class="temo_flex">
+    <div class="temognage_img"><img src="/image/unnamed.jpg" class="temo_img"></div>
+    
+      <h2 class="nom">UNKNOWN</h2>
+    
+  </div>
+  <p class="temo_txt"> "Je m'appelle Fatouma et je suis originaire de Djibouti. Mon parcours dans le génie civil a commencé avec une passion pour la construction et l'ingénierie. Après l'obtention de  mon diplôme d'études secondaires, j'ai intégré l'Université de Djibouti pour étudier le génie civil.
+
+    Pendant mes études, j'ai eu l'opportunité de participer à des stages pratiques sur des chantiers locaux, ce qui m'a permis d'acquérir une expérience concrète du travail sur le terrain.
+    
+    Après l'obtention de mon diplôme universitaire,J'ai rejoint une entreprise de construction locale où j'ai travaillé sur la conception et la supervision de divers projets d'infrastructures.
+    
+    Le génie civil m'a offert une carrière dynamique et stimulante, où chaque jour apporte de nouveaux défis et opportunités de croissance." </p>
+
+</div>
+
+
+  <footer class="footer">
+    <div class="part1">
+      <h3 class="mot">Le mot de la team</h3>
+      <p class="text">Coucou et bienvenue sur UniGuide conçu par les etudiants pour les futures etudiants, qui
+        révolutionne l'orientation post-bac pour tous.</p>
+    </div>
+    <div class="part1">
+      <h3 class="mot">Besoin d'aide ?</h3>
+      <div class="icon_mail">
+        <div class="icon"><i class="fa-regular fa-envelope fa-2xl"></i></div>
+        <div class="mail">UniGuide37@gmail.com</div>
+      </div>
+      <div class="social_icons">
+        <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icons"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+
+    </div>
+    <div class="part1 ">
+      <div class="part3">
+        <h3 class="mot1">&copy 2023 copyright.</h3>
+        <p class="text1">ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

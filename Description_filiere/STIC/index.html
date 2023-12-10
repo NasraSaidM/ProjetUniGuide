@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../UniGuide/css/footer.css">
+  <link rel="stylesheet" href="../../UniGuide/css/header.css">
+  <script src="https://kit.fontawesome.com/7396c9fb7f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="nav_header">
+    <header class="header">
+      <div class="logo">
+        <img src="/image/logo.jpeg" class="img">
+      </div>
+
+      <div class="nav_bar">
+        <ul>
+          <li>
+            <a href="/UniGuide/index.html">
+              <div class="icon"><i class="fa-solid fa-house"></i></div>
+              <div class="name">Home</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/propos.html">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="name"> A propos</div>
+            </a>
+          </li>
+          <li>
+            <a href="/UniGuide/contact.html">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="name">Contact</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+              <div class="name">Deconnection</div>
+            </a>
+          </li>
+          <div class="bar"><i class="fa-solid fa-bars"></i></div>
+
+        </ul>
+
+
+
+      </div>
+
+    </header>
+    <div class="responsive_menu ">
+      <ul>
+        <li>
+          <a href="/UniGuide/index.html">
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="name">Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/propos.html">
+            <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="name"> A propos</div>
+          </a>
+        </li>
+        <li>
+          <a href="/UniGuide/contact.html">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="name">Contact</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="icon"><i class="fa fa-right-from-bracket"></i></div>
+            <div class="name">Deconnection</div>
+          </a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+  <script>
+    const bar = document.querySelector('.bar')
+    const baricon = document.querySelector('.bar i ')
+    const responsive_menu = document.querySelector('.responsive_menu')
+    bar.onclick = function () {
+      responsive_menu.classList.toggle('open')
+    }
+  </script>
+  <div class="retour_arriere">
+    <div class="retour_btn"><i class="fa-solid fa-arrow-left"></i></div>
+  </div>
+  
+  <script>
+    let btnBack = document.querySelector('.retour_btn');
+    btnBack.addEventListener('click',()=> {
+      window.history.back()
+    } );
+  </script>
+  <div class="main">
+    <h1 class="title">Science Technique de l'Information et de la Communication (STIC)</h1>
+    <div class="description">
+      <div class="des">Description</div>
+      <p>La filière en sciences techniques de l'information et de la communication est une discipline multidisciplinaire
+        qui combine différentes branches des sciences et de la technologie avec la communication et la gestion de
+        l'information. Elle vise à comprendre, analyser et utiliser efficacement les technologies pour transmettre,
+        stocker, récupérer et gérer l'information dans divers contextes.Elle englobe les technologies de l'information
+        et de la communication (TIC), les sciences de la communication et la gestion de l'information.
+      </p>
+    </div>
+    <div class="des description">Carriere</div>
+    <p class="description">Une licence en Science, Technique de l'Information et de la Communication (STIC) offre
+      diverses opportunités professionnelles dans le domaine de la communication d'entreprise ,du journalisme ,du marketing et publicité ,du Web et multimédia ,de la recherche et développement , de l'audiovisuel et production multimédia et dans l' éducation et formation. 
+      La marge des salaires dans le domaine des STIC pour les débutants peut aller de quelques milliers à quelques  milliers de franc djiboutien par an, en fonction du niveau d'entrée et de la spécialisation.
+    </p>
+  </div>
+
+  </div>
+
+
+  <div class="temoignage">
+    <div class="temo"></div>
+    <div class="temo_flex">
+      <div class="temognage_img"><img src="/image/unnamed.jpg" class="temo_img"></div>
+      
+        <h2 class="nom">UNKNOWN</h2>
+      
+    </div>
+    <p class="temo_txt"> Je me nomme Ahmed. Mon voyage dans l'informatique a débuté après le lycée À l'université, attiré par l'innovation, j'ai plongé dans ce monde inconnu, surmontant les défis grâce au soutien de mes pairs et professeurs.
+
+      J'ai consacré temps et énergie à assimiler les concepts fondamentaux, trouvant une passion pour le développement web au fil des années. Aujourd'hui, travaillant dans une entreprise de développement de logiciels à Djibouti, je contribue au progrès technologique local. Fier de mes compétences acquises, je réalise comment l'informatique ouvre des portes dans notre monde en perpétuelle évolution.</p>
+
+  </div>
+  <footer class="footer">
+    <div class="part1">
+      <h3 class="mot">Le mot de la team</h3>
+      <p class="text">Coucou et bienvenue sur UniGuide conçu par les etudiants pour les futures etudiants, qui
+        révolutionne l'orientation post-bac pour tous.</p>
+    </div>
+    <div class="part1">
+      <h3 class="mot">Besoin d'aide ?</h3>
+      <div class="icon_mail">
+        <div class="icon"><i class="fa-regular fa-envelope fa-2xl"></i></div>
+        <div class="mail">UniGuide37@gmail.com</div>
+      </div>
+      <div class="social_icons">
+        <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icons"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+
+    </div>
+    <div class="part1 ">
+      <div class="part3">
+        <h3 class="mot1">&copy 2023 copyright.</h3>
+        <p class="text1">ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
