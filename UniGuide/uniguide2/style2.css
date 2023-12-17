@@ -171,7 +171,7 @@ body{
     width: 200%;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
-    color: ;
+   
 }
 
 .container.active .toggle{
@@ -208,4 +208,93 @@ body{
 
 .container.active .toggle-right{
     transform: translateX(200%);
+}
+
+
+/* Complexity of our password */
+
+.password_check{
+    position: relative;
+    
+}
+
+.showBtn{
+    position:absolute;
+    right: 0px;
+    top: 32%;
+    transform: translate(-70%);
+    font-size:16px ;
+    cursor: pointer;
+    font-weight: 600;
+    display: none;
+}
+.indicateur{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    display: none;
+}
+.indicateur span {
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    border-radius: 5px;
+    position: relative;
+}
+.pass_input{
+    transition: all 0.3s;
+}
+.pass_input:focus{
+    border-color:#27a360 ;
+    box-shadow: inset 0 0 3px #2fd072;
+}
+.indicateur span.medium{
+    margin: 0 3px ;
+}
+.indicateur span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    
+}
+.indicateur span.active.weak::before{
+    background-color: #ff4757;
+}
+.indicateur span.active.medium::before{
+    background-color: orange;
+}
+.indicateur span.active.strong::before{
+    background-color: #23ad5c;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: -10px;
+    display: none;
+}
+.text.weak{
+    color: #ff4757;
+}
+.text.medium{
+    color: orange;
+}
+.text.strong{
+    color: #23ad5c;
+}
+p{
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 20px ;
+}
+label[for="serie"]{
+    margin-top: 40px;
 }

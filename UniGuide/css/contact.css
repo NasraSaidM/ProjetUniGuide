@@ -11,8 +11,8 @@ form{
     background-color: #fff;
     justify-content: center;
     align-items: center;
+   
     border-radius: 10px;
-    position:relative;
     margin-left: 60px;
     margin-right: 60px;
     width: 50%;
@@ -48,9 +48,9 @@ input{
     outline-color: #5578b8;
 }
 .groupe i{
-   position:relative; 
-   top: -40px;
-   padding: 9px 8px;
+  
+   top: -70px;
+   padding: 5px 8px;
    color: #5578b8;
 }
  textarea{
@@ -64,11 +64,16 @@ input{
 .message{
     margin-left: 40px;
 }
-.pied{
-   
+.send{
+    padding: 10px 20px;
 }
 label{
   font-size: 16px;  
 }
+@media(max-width:550px){
+    textarea,.message{
+        margin-left: 10px;
+    }
+  }
 
 

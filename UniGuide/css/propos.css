@@ -15,9 +15,23 @@ body{
     text-align: right;
    }
 .box{
+  padding: 25px;
     border-radius:6px ;
-    box-shadow: 2px 2px 2px rgb(146, 140, 140);
+    box-shadow:2px  2px 2px 2px rgb(146, 140, 140);
     width: 700px;
-    margin-left: 200px;
-    margin-top: 50px ;
+    margin: 50px auto;
+    font-size: 19px;
+}
+h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media(max-width:550px){
+  .box{
+    width: 300px;
+    margin:50px auto;
+    font-size: 18px;
+  }
+ 
 }

@@ -63,9 +63,17 @@ if (isset($_POST['Envoyer'])) {
     $email = $_POST['email'];
     $mot_de_passe = $_POST['mot_de_passe'];
     $serie = $_POST['serie'];
+    $conf = $_POST['confirmation'];
+    $verification_token=0;
+    $token=0;
 
     $resultat = mysqli_query($conn, "SELECT id_serie FROM serie WHERE nom_serie = '$serie'");
     $row = mysqli_fetch_assoc($resultat);
+
+
+   if ($conf == $mot_de_passe ){
+
+   
 
     if ($row) {
         $id_serie = $row['id_serie'];
@@ -86,6 +94,7 @@ if (isset($_POST['Envoyer'])) {
                         $_SESSION['nom_eleve'] = $row['nom_eleve'];
                         $_SESSION['nom_serie'] = $row['nom_serie'];
                         $_SESSION['prenom_eleve'] = $row['prenom_eleve'];
+                        
                         header('location:index.php');
             
                         
@@ -102,7 +111,13 @@ if (isset($_POST['Envoyer'])) {
     } else {
         $vide1 = "Erreur dans la requête SQL : " . mysqli_error($conn);
     }
+} 
+else {
+    $error_message = "Votre mot de passe est incorrect.Veuillez réessayer!";
 }
+}
+
+
 
 if (isset($_POST['oublie'])) {
     $email = $_POST['email'];

@@ -112,7 +112,7 @@
 
 }
 
-@media(max-width:990px){
+@media(max-width:550px){
   .nav_bar ul li,.nav_bar .btn {
     display: none;
   }
@@ -126,5 +126,7 @@
  .responsive_menu{
   display: block;
  }
+ 
 
 }
+

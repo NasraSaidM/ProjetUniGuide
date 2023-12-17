@@ -80,6 +80,8 @@ body{
   margin-left: 20px;
   width: 80px;
   border-radius: 40px;
+  border-color: gray;
+  border: 1px;
 }
 .temo_flex h2 {
   margin-left: 80px;
@@ -92,6 +94,12 @@ body{
   letter-spacing: 1px;
   line-height: 1.5;
 
+}
+.temo1{
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 70px;
 }
 
 @media(max-width:750px){
