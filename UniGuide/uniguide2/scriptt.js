@@ -6,17 +6,18 @@ function checkPassword(){
 
     if(password.length != 0){
         if(password == cnfrmPassword){
-            message.textContent = "Passwords match";
+            message.textContent = "Le mot de passe correspond";
             message.style.backgroundColor = "#1dcd59";
         }
         else{
-            message.textContent = "Password don't match";
+            message.textContent = "Le mot de passe ne correspond pas";
             message.style.backgroundColor = "#ff4d4d";
         }
     }
     else{
-        alert("Password can't be empty!");
+        alert("ne peux pas etre vide!");
         message.textContent = "";
+        
     }
 }
 

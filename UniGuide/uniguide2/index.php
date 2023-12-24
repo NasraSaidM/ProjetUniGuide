@@ -73,7 +73,7 @@
                         const strong= document.querySelector(".strong");
                         const text= document.querySelector(".text");
                         const btn= document.querySelector(".showBtn");
-                        let Weakpass = /[a-z]/  ;
+                        let Weakpass = /[A-Za-z]/  ;
                         let Mediumpass = /\d/;
                         let Strongpass = /[!,@,#,$,%,^,&,*,?,_,~,\-,(,)€]/;
 
@@ -131,10 +131,10 @@
                                 btn.onclick = function (){
                                     if (input.type == "password"){
                                         input.type = "text";
-                                        btn.textContent = "Voir";
+                                        btn.textContent = "Masquer";
                                     } else{
                                         input.type = "password";
-                                        btn.textContent = "Masquer";
+                                        btn.textContent = "Voir";
                                     }
                                 }
 
@@ -144,11 +144,26 @@
                                 text.style.display = "none";
                                 btn.style.display="none";
                             }
-                        }
-                    </script>
+                            document.addEventListener('DOMContentLoaded', function() {
+   
+   const registerBtnn = document.getElementById('registerBtnn');
+   console.log("A cette etape le no = ")
+   if (no === 1) {
+           registerBtnn.disabled = true;
+           console.log('Mot de passe faible! Veuillez saisir un mot de passe plus complexe');
+          
+       } 
+        else {
+           registerBtnn.disabled = false;
+       }
+});
+                        } 
+    
+
+</script>
                     <label for="cnfrm-password">Confirmation de mot de passe :</label>
                     <input id="cnfrm-password" onkeyup="checkPassword()" type="password" placeholder=" Confirmer le mot de passe" name="confirmation" required >
-                  <p id="message"></p>
+                  <p id="message">motdepasse</p>
                   
                    
                 <style>
@@ -185,8 +200,9 @@
 
                     </select>
                 </div>
-                <button type="submit" value="enregistre" name="Envoyer"  >enregistre</button>
+                <button type="submit" value="enregistre" name="Envoyer" id="registerBtnn" >enregistre</button>
                 <div  class="oui error-message">
+                    
                 <style>
                     .error-message {
                         color: red;
@@ -199,7 +215,7 @@
               </div>
                 
             </form>
-            <script src="scriptt.js"></script>
+           
         </div>
         <div class="form-container sign-in"style="width:400px">
         <form method="POST" action="">
@@ -211,7 +227,6 @@
                     <input type="password" placeholder="Mot de passe" name="password">
                   
                 <a href="email_verification.php">Mot de passe oublié ?</a>
-                <a href="conneadm.php">Administrateur</a>
                 <button type="submit" value="Connexion" name="Connexion">Se connecter</button>
                 <div  class="oui error-message">
                 <style>
@@ -244,6 +259,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="scriptt.js"></script>
 </body>
 
 </html>

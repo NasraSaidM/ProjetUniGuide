@@ -24,7 +24,7 @@
     
     <div class="container" id="container" style="position: relative; text-align: center;">
         <div class="form-container sign-in" style="position: relative; text-align: center; margin: 0 auto; max-width: 400px">
-            <form  method="POST" action="password_reset.php"> 
+            <form  method="POST" action="mailer.php"> 
                <h2>Réinitialisation de votre Mot de passe</h2>
                
                     <label for="email">Adresse e-mail :</label>

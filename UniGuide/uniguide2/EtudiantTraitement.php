@@ -5,7 +5,7 @@ if (isset($_POST['Connexion'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $vide = null;
-
+    $_SESSION['enligne']=true;
     // Récupérez le mot de passe depuis la base de données en utilisant l'e-mail stocké dans $_SESSION['num_etd']
     $query = "SELECT * FROM `eleve` AS E,`serie` AS S  WHERE E.id_serie=S.id_serie AND E.email_eleve = '$email'";
     
@@ -67,14 +67,14 @@ if (isset($_POST['Envoyer'])) {
     $verification_token=0;
     $token=0;
 
+   
+
     $resultat = mysqli_query($conn, "SELECT id_serie FROM serie WHERE nom_serie = '$serie'");
     $row = mysqli_fetch_assoc($resultat);
 
 
    if ($conf == $mot_de_passe ){
-
-   
-
+    
     if ($row) {
         $id_serie = $row['id_serie'];
         $mot_de_passe_hache = password_hash($mot_de_passe, PASSWORD_DEFAULT);
@@ -108,9 +108,11 @@ if (isset($_POST['Envoyer'])) {
         } else {
             $vide1 = "Échec de l'enregistrement de l'élève.";
         }
-    } else {
+    } 
+    else {
         $vide1 = "Erreur dans la requête SQL : " . mysqli_error($conn);
     }
+
 } 
 else {
     $error_message = "Votre mot de passe est incorrect.Veuillez réessayer!";
@@ -125,37 +127,45 @@ if (isset($_POST['oublie'])) {
     $password1 = $_POST['password1'];
     $vide1 = null;
 
-    // Vérification que les données fournies sont correctes
+    // Sanitize user input
+    $email = mysqli_real_escape_string($conn, $email);
+    $password = mysqli_real_escape_string($conn, $password);
+    $password1 = mysqli_real_escape_string($conn, $password1);
+
+    // Check if the provided email exists in the database
     $query = "SELECT email_eleve FROM eleve WHERE email_eleve = '$email'";
     $result = mysqli_query($conn, $query);
 
-    if ($result) {
-        $row = mysqli_fetch_assoc($result);
+    if ($result && mysqli_num_rows($result) > 0) {
+        if ($password === $password1) {
+            // Hash the password for security
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-        if ($row['email_eleve'] === $email) {
-            // Vérification que les deux nouveaux mots de passe sont identiques
-            if ($password === $password1) {
-                // Insérer le mot de passe tel quel dans la base de données
-                $update_query = "UPDATE eleve SET mdp_eleve = '$password' WHERE email_eleve = '$email'";
-                $validation = mysqli_query($conn, $update_query);
+            // Update the password in the database
+            $update_query = "UPDATE eleve SET mdp_eleve = '$hashed_password' WHERE email_eleve = '$email'";
+            $validation = mysqli_query($conn, $update_query);
 
-                if ($validation) {
-                    $vide1 = "La modification du mot de passe est réussie !!";
-                } else {
-                    $vide1 = "Erreur lors de la mise à jour du mot de passe.";
-                }
+            if ($validation) {
+                $vide1 = "La modification du mot de passe est réussie !!";
+                echo $vide1;
+                echo '<script>window.setTimeout(function() {
+                    window.location.href = "index.php";
+                }, 5000);</script>';
             } else {
-                $vide1 = "Les deux mots de passe ne sont pas identiques !!";
+                $vide1 = "Erreur lors de la mise à jour du mot de passe.";
             }
         } else {
-            $vide1 = "Les informations fournies sont incorrectes.";
+            $vide1 = "Les deux mots de passe ne sont pas identiques !!";
         }
-
-        mysqli_free_result($result);
     } else {
-        $vide1 = "Erreur lors de la récupération des informations de l'étudiant.";
+        $vide1 = "Les informations fournies sont incorrectes.";
     }
+
+    mysqli_free_result($result);
+} else {
+    $vide1 = "Erreur lors du traitement du formulaire.";
 }
+
 
 
 ?>
